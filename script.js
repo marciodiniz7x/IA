@@ -11,6 +11,9 @@ async function calcular() {
     ];
     // Rede neural treina com base nos dados
     net.train(training);
+    // Rede neural Lê os dados a partir dos quais ela terá que adivinhar o resultado
+    const output = net.run([1, 1, 1]);
+    // Mostrar resultado da previsão no html
     
 
 

@@ -12,4 +12,5 @@ async function calcular() {
     // Rede neural treina com base nos dados
     
 
+
 }

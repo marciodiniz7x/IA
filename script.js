@@ -10,6 +10,7 @@ async function calcular() {
         { input: [1, 1, 0], output: [1] },
     ];
     // Rede neural treina com base nos dados
+    net.train(training);
     
 
 

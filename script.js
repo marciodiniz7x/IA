@@ -1,3 +1,6 @@
 async function calcular() {
-    const net = brain
+
+    const net = brain.NeuralNetwork({ hiddenLayers: [1]});
+
+    
 }

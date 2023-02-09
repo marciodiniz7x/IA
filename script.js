@@ -20,5 +20,6 @@ async function calcular() {
     // Mostrar resultado da previsão no html
     resultado.innerHTML = output;
 
+    
 
 }

@@ -49,16 +49,17 @@ h1 {
 .bar {
     
     background-color: rgb(10, 170, 95);
-    width: 230px;
+    width: 200px;
     height: 15px;
     border-radius: 10px;
 }
 .progress {
-    
-    background-color: rgb(224, 250, 238);
+    transition: 1000ms;
+    background-color: #d8fa7c;
     width: 30px;
     height: 15px;
     border-radius: 10px;
+    margin-left: 86px;
 }
 
 .container {

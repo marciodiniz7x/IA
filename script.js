@@ -32,6 +32,6 @@ async function calcular() {
     setTimeout(() => {
         resultado.classList.remove('surgir');
     }, 1200);
-    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <b>${time}</b>.`;
+    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <span style="color:#d8fa7c;"><b>${time}</b></span>.`;
 
 }

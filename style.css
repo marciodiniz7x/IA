@@ -73,14 +73,14 @@ h1 {
 }
 .resultado {
     padding: 20px;
-   
+    font-size: 20px;
     position: relative;
     text-align: left;
 
 }
 .surgir {
     padding: 20px;
-   
+    font-size: 20px;
     position: relative;
     text-align: left;
     animation: surgir 1200ms ;

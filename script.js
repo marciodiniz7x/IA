@@ -1,4 +1,5 @@
 const resultado = document.querySelector('.resultado');
+const porque = document.querySelector('.porque');
 
 async function calcular() {
 
@@ -31,7 +32,8 @@ async function calcular() {
     resultado.classList.add('surgir');
     setTimeout(() => {
         resultado.classList.remove('surgir');
+        porque
     }, 1200);
-    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <span style="color:#d8fa7c;"><b>${time}</b></span>.`;
+    resultado.innerHTML = `Pelo modelo dado, creio que quem vence é o: <span style="color:#d8fa7c;"><b>${time}</b></span>.`;
 
 }

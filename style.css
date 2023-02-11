@@ -14,7 +14,7 @@ h1 {
     width: 150px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(57, 70, 255);
+    background-color: rgb(12, 160, 91);
     color: white;
     font-family: 'poppins';
     font-weight: 500;
@@ -23,7 +23,7 @@ h1 {
 }
 .botao:hover {
     
-    background-color: rgb(0, 116, 151);
+    background-color: rgb(10, 165, 165);
 }
 
 .times {
@@ -40,14 +40,25 @@ h1 {
     height: 80px;
 }
 .psg {
-    
+
     width: 80px
-    
 }
 .bayern {
-   
-    width:80px
+    width:80px 
+}
+.bar {
     
+    background-color: rgb(10, 170, 95);
+    width: 230px;
+    height: 15px;
+    border-radius: 10px;
+}
+.progress {
+    
+    background-color: rgb(224, 250, 238);
+    width: 30px;
+    height: 15px;
+    border-radius: 10px;
 }
 
 .container {

@@ -6,7 +6,7 @@ async function calcular() {
     const net = new brain.NeuralNetwork({ hiddenLayers: [4], activation: 'sigmoid'});
     // Forneceu dados para treinamento da rede neural
     const dados = [
-        // O output mostra o time vencedor após um retrospecto de 6 jogos inseridos no input, ignorando os empates, sendo o 1 o time mandante do quinto jogo.
+        // O output mostra o time vencedor após um retrospecto de quem venceu os últimos 6 jogos inseridos no input, ignorando os empates, sendo o 1 o time mandante no último jogo.
         { input: [1, 1, 1, 1, 0, 1], output: [0] },
         { input: [0, 0, 0, 1, 1, 1], output: [1] },
         { input: [0, 0, 1, 0, 0, 0], output: [0] },
@@ -32,6 +32,6 @@ async function calcular() {
     setTimeout(() => {
         resultado.classList.remove('surgir');
     }, 1200);
-    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <b>${time}</b>. <br> A chance de eu esta certa é de <b>${arredond}</b>%.`;
+    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <b>${time}</b>.`;
 
 }

@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    font-family: 'poppins';
+    background-color: #343541;
+    color: white;
+}
+h1 {
+    font-weight: 600;
+}
+
+.botao {
+    transition: 300ms;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(57, 70, 255);
+    color: white;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+.botao:hover {
+    
+    background-color: rgb(0, 116, 151);
+}
+
+.container {
+    
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50px;
+    height: 100px;
+    width: 350px;
+    border: 1px solid;
+    transform: translateX(-50%);
+}
+.resultado {
+    padding: 20px;
+   
+    position: relative;
+    text-align: left;
+
+}
+.surgir {
+    padding: 20px;
+   
+    position: relative;
+    text-align: left;
+    animation: surgir 1200ms ;
+}
+
+@keyframes surgir {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

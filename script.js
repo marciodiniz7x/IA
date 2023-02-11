@@ -19,7 +19,6 @@ async function calcular() {
     // Rede neural Lê os dados a partir dos quais ela terá que adivinhar o resultado
     const output = net.run([0, 1, 0, 0, 0, 1]);
     const arredond = Math.round(output);
-    const porcent = Math.round(100*output);
     // Substitui o valor 0 e 1 pelos times.
     
     if ( arredond === 1 ) {
@@ -33,6 +32,6 @@ async function calcular() {
     setTimeout(() => {
         resultado.classList.remove('surgir');
     }, 1200);
-    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <b>${time}</b>. <br> A chance de eu esta certa é de <b>${porcent}</b>%.`;
+    resultado.innerHTML = `Pelo modelo dado, creio que quem passa de fase é o: <b>${time}</b>. <br> A chance de eu esta certa é de <b>${arredond}</b>%.`;
 
 }

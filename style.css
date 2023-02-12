@@ -9,7 +9,7 @@ h1 {
 }
 
 .botao {
-    transition: 300ms;
+    transition: 500ms;
     padding: 10px;
     width: 150px;
     border-radius: 10px;
@@ -22,8 +22,8 @@ h1 {
     cursor: pointer;
 }
 .botao:hover {
-    
-    background-color: rgb(10, 165, 165);
+    color: black;
+    background-color: #d8fa7c;
 }
 
 .times {
@@ -59,11 +59,12 @@ h1 {
     width: 30px;
     height: 15px;
     border-radius: 10px;
-    margin-left: 86px;
+    
 }
 
 .container {
-    
+    background-color: #444654;
+    border-radius: 10px;
     position: relative;
     margin-left: 50%;
     margin-top: 50px;
@@ -75,20 +76,10 @@ h1 {
     padding: 20px;
     font-size: 20px;
     position: relative;
-    text-align: left;
-
-}
-.surgir {
-    padding: 20px;
-    font-size: 20px;
-    position: relative;
-    text-align: left;
-    animation: surgir 1200ms ;
 }
 
 .porque {
-    
-    
+    transition: 500ms;
     padding: 10px;
     width: 150px;
     border-radius: 10px;
@@ -102,11 +93,41 @@ h1 {
 }
 .porque:hover {
     
-    background-color: rgb(10, 165, 165);
+    color: black;
+    background-color: #d8fa7c;
+}
+
+.container2 {
+    background-color: #444654;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 50px;
+    height: 320px;
+    width: 350px;
+    transform: translateX(-50%);
+}
+.justificativa {
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
 }
 
 .sumir {
     display: none;
+}
+
+/* ANIMAÇÕES */
+.surgir {
+    animation: surgir 1200ms ;
+}
+
+.piscar {
+    animation: piscar 1200ms linear infinite;
+}
+
+.movimentar {
+    animation: movimentar 3000ms infinite;
 }
 
 @keyframes surgir {
@@ -115,5 +136,29 @@ h1 {
     }
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity:  100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes movimentar {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 170px;
+    }
+    100% {
+        margin-left: 0px;
     }
 }

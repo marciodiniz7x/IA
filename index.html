@@ -8,25 +8,29 @@
     <script src="//unpkg.com/brain.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>OZMA</title>
+    <title>Ozma IA</title>
     
 </head>
 <body>
 
-    <h1>Inteligência Artificial OZMA</h1>
+    <h1>Inteligência Artificial Ozma</h1>
     <button class="botao" onclick="calcular()">Prever</button>
     
     <div class="times">
         <img class="psg" src="./img/psg.png" alt="">
         <div class="bar">
-            <div class="progress"></div>
+            <div class="progress movimentar"></div>
         </div>
         <img src="./img/bayern.png" alt="" class="bayern">
     </div>
     <div class="container">
-        <div class="resultado"></div>
+        <div class="resultado piscar">Aguardando comando...</div>
     </div>
-    <button class="porque " onclick="calcular()">Por quê?</button>
+    <br><br>
+    <button class="porque sumir" onclick="justificar()">Por quê?</button>
+    <div class="container2 sumir">
+        <div class="justificativa"></div>
+    </div>
     
 </body>
 </html>

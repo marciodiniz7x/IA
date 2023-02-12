@@ -56,6 +56,7 @@ h1 {
 .progress {
     transition: 1000ms;
     background-color: #d8fa7c;
+    margin-left: 85px;
     width: 30px;
     height: 15px;
     border-radius: 10px;
@@ -127,7 +128,7 @@ h1 {
 }
 
 .movimentar {
-    animation: movimentar 3000ms infinite;
+    animation: movimentar 6000ms infinite;
 }
 
 @keyframes surgir {
@@ -153,12 +154,21 @@ h1 {
 
 @keyframes movimentar {
     0% {
+        margin-left: 85px;
+    }
+    20% {
         margin-left: 0px;
     }
-    50% {
+    40% {
+        margin-left: 170px;
+    }
+    60% {
+        margin-left: 0px;
+    }
+    80% {
         margin-left: 170px;
     }
     100% {
-        margin-left: 0px;
+        margin-left: 85px;
     }
 }

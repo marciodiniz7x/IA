@@ -62,13 +62,30 @@ function calcular() {
     resultado.classList.remove('piscar')
     porque.classList.add('surgir');
     porque.classList.add('sumir');
-    progress.classList.remove('movimentar');
-    progress.style.marginLeft = `${percent}px`;
+    progress.classList.add('movimentar');
+
+    resultado.classList.add('piscar');
+    resultado.innerHTML = "Cruzando dados...";
+
+    
     setTimeout(() => {
-        resultado.classList.remove('surgir');
-        porque.classList.remove('sumir');
-    }, 1200);
-    resultado.innerHTML = `Pelo modelo dado, avalio que quem vence é o: <span style="color:#d8fa7c;"><b>${time}</b></span>.<br>`;
+        
+        
+        progress.classList.remove('movimentar');
+        setTimeout(() => {
+
+            progress.style.marginLeft = `${percent}px`;
+
+            setTimeout(() => {
+                resultado.classList.remove('surgir');
+                porque.classList.remove('sumir');
+            }, 1200);
+            resultado.classList.remove('piscar');
+            resultado.innerHTML = `Pelo modelo dado, avalio que quem vence é o: <span style="color:#d8fa7c;"><b>${time}</b></span>.<br>`;
+
+        }, 300);
+
+    }, 6000);
 
 }
 

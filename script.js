@@ -67,6 +67,8 @@ function calcular() {
     resultado.classList.add('piscar');
     resultado.innerHTML = "Cruzando dados...";
 
+    container2.classList.add('sumir');
+
     
     setTimeout(() => {
         
@@ -93,6 +95,8 @@ function justificar() {
 
     container2.classList.remove('sumir');
 
+    progress.classList.add('movimentar');
+    
     justificativa.innerHTML = `Com base no histórico de partidas dos times em seus campeonatos, adicionando pesos diferentes para jogos em casa e fora, bem como os confrontos diretos entre os dois times, avalio o <span style="color:#d8fa7c;"><b>${time}</b></span> tem <span style="color:#d8fa7c;"><b>${Math.round(finalperc)}%</b></span> de chance de vencer jogando em casa.`;
 
 }

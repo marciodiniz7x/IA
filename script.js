@@ -95,6 +95,6 @@ function justificar() {
 
     container2.classList.remove('sumir');
     
-    justificativa.innerHTML = `Com base no histórico de partidas dos times em seus campeonatos, jogando em casa e fora, e analizando também os confrontos diretos entre os dois times, avalio o <span style="color:#d8fa7c;"><b>${time}</b></span> tem <span style="color:#d8fa7c;"><b>${Math.round(finalperc)}%</b></span> de chance de vencer jogando em casa.`;
+    justificativa.innerHTML = `Com base no histórico dos dois times em seus campeonatos, jogando em casa e fora, e analizando também os confrontos diretos entre os dois, avalio o <span style="color:#d8fa7c;"><b>${time}</b></span> tem <span style="color:#d8fa7c;"><b>${Math.round(finalperc)}%</b></span> de chance de vencer jogando em casa.`;
 
 }

@@ -104,7 +104,7 @@ h1 {
     position: relative;
     margin-left: 50%;
     margin-top: 50px;
-    height: 320px;
+    
     width: 350px;
     transform: translateX(-50%);
 }

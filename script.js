@@ -38,7 +38,7 @@ function calcular() {
     net.train(dados);
 
     // Rede neural Lê os dados a partir dos quais ela terá que adivinhar o resultado
-    const output = net.run([0, 1, 0]);
+    const output = net.run([0, 0, 0]);
     const arredond = Math.round(output);
 
     // Calcula a porcentagem de acerto
@@ -72,11 +72,10 @@ function calcular() {
     
     setTimeout(() => {
         
-        
         progress.classList.remove('movimentar');
         setTimeout(() => {
 
-            progress.style.marginLeft = `${percent}px`;
+            progress.style.marginLeft = `${percent}%`;
 
             setTimeout(() => {
                 resultado.classList.remove('surgir');
